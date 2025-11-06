@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+  <h2>Student Registration Form</h2>
+
+  <form method="post" action="submit_form.php">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Enter first name" required><br><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Enter last name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter valid email" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+    <label for="course">Select Course:</label><br>
+    <select id="course" name="course" required>
+      <option value="">--Select Course--</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="B.Sc">B.Sc</option>
+      <option value="BCA">BCA</option>
+      <option value="M.Tech">M.Tech</option>
+    </select><br><br>
+
+    <label for="address">Address:</label><br>    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+  </form>
+
+</body>
+</html>
+    <textarea id="address" name="address" placeholder="Enter your address" rows="3" cols="30" required></textarea><br>
+    
