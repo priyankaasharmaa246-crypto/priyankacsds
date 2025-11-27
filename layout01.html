@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 01</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            height: auto;
+            background-color: #CCC;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        header,footer{
+            height: 120px;
+            background-color: #999;
+        }
+        nav{
+            height: 80px;
+            background-color: #999;
+        }
+        section{
+            height: 500px;
+           display: flex;
+           flex-direction: row;
+           gap: 10px;
+        }
+        #left{
+            flex-grow: 1;
+            height: 500px;
+            background-color: #999;
+        }
+        #right{
+            flex-grow: 2;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        aside,article{
+            height: 250px;
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <main><!--main start-->
+        <header><h2>Header</h2></header>
+        <nav><h2>Nav</h2></nav>
+
+        <section><!--section start-->
+            <div id="left"><h2>main</h2></div>
+            <div id="right">
+                <aside><h2>Aside</h2></aside>
+                <article><h2>Section</h2></article>
+            </div>
+        </section><!--section end-->
+
+        <footer><h2>Footer</h2></footer>
+
+    </main><!--main end-->
+    
+</body>
+</html>
